@@ -14,7 +14,7 @@ The project follows a structured 4-step pipeline:
 ## 2. Feature Engineering
 New features were created to capture deeper relationships in the data:
 ⦁	Income Spent on subscription (%): Created a new variable to help our LDA model.
-⦁	Prizm_Year & Prizm_Knowledge: Decoded the Nielsen Prizm column into two separate semantic features (Lifestage and Affluence).
+⦁	Prizm_Year & Prizm_Knowledge: Decoded the Nielsen Prizm column into two separate semantic features (Lifestage and Knowledge).
 ⦁	Dimensionality Reduction: Applied One-Hot Encoding with drop_first=True to prevent multicollinearity.
 ## 3. Model Optimization
 ⦁	Train/Test Split: Performed a stratified split (80/20) to preserve class distribution.
