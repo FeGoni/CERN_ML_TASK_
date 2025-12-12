@@ -1,4 +1,5 @@
-CERN ML Task
+## CERN ML Task
+
 ## Project Overview
 This project implements a complete Machine Learning pipeline to predict customer subscription behavior. The goal is to classify customers into two groups: those likely to subscribe (Target = 1) and those who are not (Target = 0).
 ## Assignment Details
@@ -22,4 +23,4 @@ New features were created to capture deeper relationships in the data:
 ## 4. Final Validation
 The tuned model was evaluated on the held-out test set (20% of total data).
 ## Conclusion
-The analysis highlights the limitations of using Linear Discriminant Analysis (LDA) for this specific dataset. LDA relies on the assumption that features follow a Gaussian distribution. This assumption clashes with the nature of our data, where the strongest predictors are categorical (e.g., Source Channel, Nielsen Prizm) and sparse after One-Hot Encoding. Consequently, the model struggles to find an optimal linear boundary. We achieved the result of 58% recall and 45% f1-score.
+The analysis highlights the limitations of using Linear Discriminant Analysis for this specific dataset. LDA relies on following a Gaussian distribution. This assumption clashes with the nature of our data, where the strongest predictors are categorical (Source Channel, Nielsen Prizm) and sparse after One-Hot Encoding. Therefore the model struggles to find an optimal linear boundary. We achieved the result of 58% recall and 45% f1-score.
